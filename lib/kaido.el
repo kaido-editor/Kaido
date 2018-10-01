@@ -3,7 +3,7 @@
 
 (require 'cl)
 
-(require 'doom-modeline)
+
 
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
                          ;("marmalade" . "https://marmalade-repo.org/packages/")
@@ -41,14 +41,20 @@
                     :width 'normal)
 
   ;; initialize doom-modeline
-  (doom-modeline-init)
+  
   ;; enable line numbers globally
   (global-linum-mode t) 
   ;; check if new package was added to list
-  (load-theme kaido-theme t)
+ 
   ;;
-  (add-to-path-with-subdirs kaido-contexts)
   ;; install missing packages
-  (install pkgs))
+  (install pkgs)
+  (require 'doom-modeline)
+  (doom-modeline-init)
+  (load-theme kaido-theme t)
+  (add-to-path-with-subdirs kaido-contexts)
+
+  )
+
 
 (provide 'kaido)
