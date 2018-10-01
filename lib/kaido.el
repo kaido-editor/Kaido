@@ -28,13 +28,12 @@
 
 
 (defun kaido-load-context (ctx)
-  (require (symbol-name ctx)))
-
+  (require ctx))
 
 (defun kaido-initialize ()
   ;; highlight matching params
   (show-paren-mode 1)
-  ;; set karl font
+  ;; set kaido font
   (set-face-attribute 'default nil
 		    :family kaido-font
                     :height 110
