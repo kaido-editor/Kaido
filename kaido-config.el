@@ -39,7 +39,7 @@
 ;; loading up
 (add-to-list 'load-path kaido-lib)
 (require 'kaido)
-
-;(kaido-load-context 'c/core)
 ;;initialize kaido editor
+
+
 (kaido-initialize)

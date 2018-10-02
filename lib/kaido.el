@@ -40,27 +40,24 @@
                     :weight 'normal
                     :width 'normal)
 
-  ;; initialize doom-modeline
-  
+
+
+  ;; enabling cua mode
+  (cua-mode t)
+  (setq cua-auto-tabify-rectangles nil)
+  (transient-mark-mode 1)
+  (setq cua-keep-region-after-copy t)
+
   ;; enable line numbers globally
   (global-linum-mode t) 
-  ;; check if new package was added to list
- 
-  ;;
   ;; install missing packages
   (install pkgs)
   (require 'doom-modeline)
   (doom-modeline-init)
   (load-theme kaido-theme t)
   (add-to-path-with-subdirs kaido-contexts)
-
   )
 
-;; Enabling CuaMode
-(cua-mode t)
-(setq cua-auto-tabify-rectangles nil)
-(transient-mark-mode 1)
-(setq cua-keep-region-after-copy t)
 
 
 (provide 'kaido)
