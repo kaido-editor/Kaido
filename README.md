@@ -1,22 +1,13 @@
 # Kaido
 
-
-
-
-
 # Kaido Ideas
-Kaido is built the idea of we need packages and configs for each programming languages, so Kaido has concept of implementing this idea .
-Contextes are Kaido implementation of this idea, each Context represent specific programming language or situtaion, it has ide-like features, configs, key-bindings for each programming language .
-You can have same key-binding for various jobs, Kaido understands the context that you are working in and loads needed Contextes for that project, let's say you are writing a
-simple web front-end, kaido will load up Contextes that you specified for web front-end development, let's say you just wanna switch and work on a python project Kaido
-will change it's context to be an excellent IDE for Python.
-
+Kaido is built on top of the the idea that we loved the navigation shortcuts we could use in terminals (e.g. Ctrl + a to go the beginning, Ctrl + e to go the end of line and etc) but most modern editors don't support that. Fortunately those shortcuts were available in GNU Emacs. So we took GNU Emacs and enabled the CuaMode for it (so that copy/paste/cut would be changed to normal shortcuts used elsewhere) and we added the dynamic config loading to it based on the file extention Kaido opened. So the idea is that you can have same key-binding for various jobs, Kaido understands the context that you are working in and loads needed Contextes for that project.
 
 # Usage
 ```
 git clone https://github.com/kaido-editor/Kaido.git ~/kaido
 cd ~/kaido
-make install
+sudo make install
 ```
 
 # License
@@ -29,4 +20,4 @@ You should have received a copy of the GNU General Public License along with thi
 
 All the documents of Kaido that locate in 'doc' directories release under the term of GNU FDL.
 
-Copyright (C) 2018 @ raskarpour@gmail.com
+Copyright (C) 2018 @ raskarpour@gmail.com and im.alavifazel@gmail.com
