@@ -5,9 +5,9 @@ Kaido is built on top of the the idea that we loved the navigation shortcuts we 
 
 # Usage
 ```
-git clone https://github.com/kaido-editor/Kaido.git ~/kaido
-cd ~/kaido
-sudo make install
+git clone https://github.com/kaido-editor/Kaido.git
+cd Kaido
+sudo sh ./installer.sh
 ```
 
 # License
