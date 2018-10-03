@@ -9,7 +9,7 @@ cp -r ./lib ~/.kaido.d/
 cp kaido-config.el ~/.kaido.d/kaido-config.el
 
 echo 'export KAIDO_HOME=~/.kaido.d' >> ./kaido
-echo 'emacs --name Kaido --no-site-file --no-site-lisp --no-splash --title Kaido -q -l ~/.kaido.d/kaido-config.el "$$@"' >> ./kaido
+echo 'emacs --name Kaido --no-site-file --no-site-lisp --no-splash --title Kaido -q -l ~/.kaido.d/kaido-config.el $@' >> ./kaido
 
 sudo mv ./kaido /usr/bin
 sudo chmod -R 777 ~/.kaido.d/
