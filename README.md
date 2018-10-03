@@ -1,4 +1,5 @@
 # Kaido
+Kaido basically is an distro of emacs but built with the idea of convention over configuration and you see this idea all over it, if you love emacs, tired of boring, bloated IDEs, slow web-ish editors Kaido is your thing . 
 
 # Kaido Ideas
 Kaido is built on top of the the idea that we loved the navigation shortcuts we could use in terminals (e.g. Ctrl + a to go the beginning, Ctrl + e to go the end of line and etc) but most modern editors don't support that. Fortunately those shortcuts were available in GNU Emacs. So we took GNU Emacs and enabled the CuaMode for it (so that copy/paste/cut would be changed to normal shortcuts used elsewhere) and we added the dynamic config loading to it based on the file extention Kaido opened. So the idea is that you can have same key-binding for various jobs, Kaido understands the context that you are working in and loads needed Contextes for that project.
