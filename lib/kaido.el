@@ -48,6 +48,9 @@
   (transient-mark-mode 1)
   (setq cua-keep-region-after-copy t)
 
+  ;; adding compile/run shortcut
+  (global-set-key [f4] 'compile)
+  
   ;; making fullscreen on startup
   (add-to-list 'default-frame-alist '(fullscreen . maximized))
   
