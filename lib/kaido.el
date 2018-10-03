@@ -48,6 +48,13 @@
   (transient-mark-mode 1)
   (setq cua-keep-region-after-copy t)
 
+  ;; making fullscreen on startup
+  (add-to-list 'default-frame-alist '(fullscreen . maximized))
+  
+  ;; disabling auto backup files (to prevent the polluting your project's directory)
+  (setq make-backup-files nil)
+  (setq auto-save-default nil)
+
   ;; enable line numbers globally
   (global-linum-mode t) 
   ;; install missing packages
