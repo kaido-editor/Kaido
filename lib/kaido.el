@@ -36,7 +36,7 @@
   ;; set kaido font
   (set-face-attribute 'default nil
 		    :family kaido-font
-                    :height 110
+                    :height 100
                     :weight 'normal
                     :width 'normal)
 
