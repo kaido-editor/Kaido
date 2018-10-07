@@ -43,5 +43,3 @@
 
 
 (kaido-initialize)
-
-(kaido-load-context 'python/core) ;;python context load
